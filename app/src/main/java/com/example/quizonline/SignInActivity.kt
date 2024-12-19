@@ -39,12 +39,15 @@ class SignInActivity : AppCompatActivity() {
         } else {
             binding.apply {
                 loginButton.setOnClickListener {
+                    binding.loginProgress.visibility = android.view.View.VISIBLE
                     if (loginUsername.text.toString().isNotEmpty() && loginPassword.text.toString()
                             .isNotEmpty()
                     ) {
-                        getUsers(loginUsername.text.toString(), loginPassword.text.toString())
 
+                        getUsers(loginUsername.text.toString(), loginPassword.text.toString())
+                        binding.loginProgress.visibility = android.view.View.GONE
                     } else {
+                        binding.loginProgress.visibility = android.view.View.GONE
                         Toast.makeText(
                             this@SignInActivity,
                             "Please fill all the fields",
