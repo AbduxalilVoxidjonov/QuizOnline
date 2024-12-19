@@ -34,7 +34,7 @@ class TopicListAdapter(private val topicData: TopicData) :
                 topicId.text = topicDataItem.id.toString() + " - Mavzu"
                 topicName.text = topicDataItem.name
                 root.setOnClickListener {
-                    val intent = Intent(root.context, QuizActivity::class.java)
+                   val intent = Intent(root.context, QuizActivity::class.java)
                     intent.putExtra("topicId", topicDataItem.id)
                     root.context.startActivity(intent)
                 }

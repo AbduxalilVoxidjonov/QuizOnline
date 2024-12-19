@@ -2,4 +2,13 @@
     <string name="app_name">QuizOnLine</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="planets_array">
+        <item>Tehnika</item>
+        <item>Update</item>
+        <item>Culture</item>
+        <item>Technology</item>
+        <item>Sports</item>
+        <item>Mevalar</item>
+        <item>Language learning</item>
+    </string-array>
 </resources>
